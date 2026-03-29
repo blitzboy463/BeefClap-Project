@@ -1,0 +1,22 @@
+import random
+random.random()
+num =[1,2]
+get = random.choice(num)
+
+
+if get == 1:
+    ans = input("you start:")
+    counter = 1
+    playerturn = True
+else:
+    print("Beef")
+    counter = 1
+    playerturn = False
+
+if counter == 1 and playerturn:
+    print("Clap")
+elif counter == 1 and not playerturn:
+    ans = input("Your Turn:")
+
+
+# ans = input("Your Turn:")
