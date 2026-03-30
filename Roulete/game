@@ -1,0 +1,20 @@
+import random
+num = [1,2,3,4,5]
+count = 0
+Live = int(random.choice(num))
+print(f"{count}")
+print(f"{Live}")
+
+
+def Shoot():
+    global count
+    pick = int(input("pick a number 1-5:"))
+    if  pick == Live:
+        print(f"DEAD you lasted {count} Rounds")
+    else:
+        count =+ 1
+        print ("Go Again")
+        Shoot()
+
+
+Shoot()
